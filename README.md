@@ -1,6 +1,6 @@
 # Windows Setup
 
-Open a PowerShell prompt and run:
+Clone this repo, open a PowerShell prompt on the same folder and run:
 
 ```shell
 & setup.ps1
