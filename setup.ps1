@@ -1,18 +1,18 @@
 # Windows new setup installation
 
-ECHO Welcome to your new system!
+ECHO "Welcome to your new system!"
 
-ECHO Installing Chocolatey
+ECHO "Installing Chocolatey..."
 
 Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
 
 iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 
-ECHO Disable confirmations
+ECHO "Disabling global confirmations"
 
 choco feature enable -n allowGlobalConfirmation
 
-ECHO Installing apps
+ECHO "Installing apps..."
 
 # DEV
 choco install git -y
@@ -31,6 +31,6 @@ choco install dotnet4.5 -y
 # BROWSERS
 choco install googlechrome -y
 
-ECHO Enable confirmations
+ECHO "Enabling confirmations"
 
 choco feature disable -n allowGlobalConfirmation
